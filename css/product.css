@@ -1,0 +1,51 @@
+.section1 .advance{ width: 60%}
+.section1:after,.wrapper.form:after{ content: ''; display: block; visibility: hidden; clear: both;}
+.advance .advance-item{ width: calc(100%/3); float: left; border-right:1px solid #ccc; border-bottom: 1px solid #ccc; padding-top: 40px; padding-bottom: 40px; text-align: center;}
+.advance-item i{ display: inline-block; width: 52px; height: 52px; background-repeat: no-repeat; background-position: center}
+.advance-item .tit{ font-size: 16px; font-weight: bold; word-spacing: 1px; margin: 5px 0 5px; color: #171717; }
+.advance-item p{ font-size: 13px; font-weight: 100; color: #465569; line-height: 1.4}
+.section1 .aboutus{ width: 40%; position: absolute; bottom: 0; top: 0; right: 0;}
+
+.section2{ padding: 80px 0 190px; text-align: center;}
+.section2 .tit{ color: #ffbc3a; font-size: 36px; font-weight: 100; margin-bottom: 76px; margin-top: 60px;}
+.product-function-item{ display: inline-block; width: 33.333333%; font-weight: 100;}
+.product-function-item .i-tit{ font-size: 24px; color: #75a9f5; margin-bottom: 10px; margin-top: 10px;}
+.product-function-item .i-info{ font-size: 18px; color: #666;}
+/*.wrapper{ text-align: center;}*/
+
+.section3{ padding-bottom: 110px;}
+.section3 .wrapper .box{ position: relative; }
+.livingnm span,.chartanalysis span,.chartanalysis img{ position: absolute; font-size: 26px; color: #000921; font-weight: 100;}
+.livingnm{background: url(../images/livingnm.png) no-repeat center top; height: 860px; margin-bottom: 100px;}
+.livingnm span{ top: 260px; right: 100px;}
+
+.livingnm .box,.chartanalysis .box,.otherterminl,.product-function{ width: 1320px; margin: 0 auto;}
+.chartanalysisimg{ width: 900px; z-index: 2; top: 15px; left: 139px;}
+.chartanalysis .box{ height: 600px;}
+.usercountimg{ width: 650px; z-index: 1; right: 50px;bottom: 10px;  box-shadow: 0 0 35px rgba(85,141,217,.3)}
+.chartanalysis span{ bottom: 90px; left: 190px;}
+.otherterminl{ margin-top: 187px;}
+.otherterminl span{ text-align: center; font-size: 26px; color: #000921; font-weight: 100; display: inline-block; line-height: 1.6; width: 50%;}
+.otherterminl img{ width: 50%; vertical-align: middle;}
+.section1{text-align: center; padding-top: 192px; padding-bottom: 36px;}
+.createliving-left,.createliving-right{ display: inline-block; width: 45%; vertical-align: top; position: relative;}
+.createliving-left{ text-align: left;}
+.createliving-left .tit{ color: #333; font-size: 36px; font-weight: 100; line-height: 1.6; letter-spacing: 3px; margin-top: 48px;}
+.createliving-left p{ color: #333; font-size: 18px; font-weight: 100; margin-top: 26px; line-height: 1.8; margin-bottom: 56px;}
+.createliving-right img{ vertical-align: top; }
+.createliving-right img:last-child{ top: -30px; position: absolute; left: 25%;}
+.school-logo{ margin-top: 96px;}
+.school-logo li{ width: 178px; display: inline-block;}
+
+.section5{ width: 1200px; margin: 0 auto;}
+.wrapper.form{ margin-top: 180px; margin-bottom: 140px;}
+.wrapper.form .form-left{ width: 380px;float: left; }
+.wrapper.form .form-left p{ font-size: 14px; color: #242628; margin-bottom: 20px; line-height: 1.6; margin-top: 20px; text-indent: 30px;}
+.wrapper.form .form-right{ float: right; width: 540px;}
+.wrapper.form .form-left .address p{ text-indent: 0; margin-bottom: 0; font-weight: bold; margin-top: 0;}
+.address{ margin-top: 73px;}
+.layui-input-block{ margin-left: 0}
+.layui-form-item .layui-inline:last-child{ margin-right: 0;}
+.layui-inline{ width: 265px;}
+.layui-input-block input, .layui-inline input{ font-size: 16px; line-height: 50px; height: 50px;}
+.layui-input-block textarea{font-size: 16px; padding: 20px 10px}

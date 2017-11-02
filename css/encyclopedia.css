@@ -1,0 +1,145 @@
+div#live_main{
+    padding:150px 50px 60px;
+
+}
+div.live_main_left{
+    width:25%;
+    float: left;
+    background-color: #fff;
+    margin-right:15px;
+    /*height:2100px;*/
+}
+div.live_main_right{
+    width:73%;
+    float: right;
+    background-color: #fff;
+    /*height:2100px;*/
+}
+div.live_left_con{
+    width:100%;
+    /*padding: 20px;*/
+
+}
+div.live_right_con{
+    width:100%;
+    /*padding:20px;*/
+
+}
+div.live_left_title{
+    background-color: #5383C3;
+    height:50px;
+    position: relative;
+}
+div.live_right_title{
+    background-color: #A4CBFF;
+    height:50px;
+}
+div.live_left_title b,div.live_right_title b{
+    line-height: 50px;
+    color:#fff;
+    font-size: 24px;
+    font-weight: normal;
+    padding-left:20px;
+}
+
+div.live_left_title input{
+    background-color: #fff;
+    border: 1px solid #5383C3;
+    border-radius: 20px;
+    padding: 6px 10px;
+    height: 20px;
+    margin-top: 8px;
+    margin-right: 6%;
+    width: 36%;
+    padding-right: 47px;
+}
+div.live_left_title img{
+    position: absolute;
+    top: 32%;
+    right: 8%;
+    width: 31px;
+    border-left: 1px solid #77B1F1;
+    padding-left: 5px;
+}
+
+
+/*宸︿晶瀵艰埅鏍�*/
+div.left_nav ul{
+    width:100%;
+}
+
+div.left_nav ul li a{
+    display: inline-block;
+    width:100%;
+    height:100%;
+    font-size: 20px;
+    padding-top:10px;
+    padding-bottom: 10px;
+    color:#000;
+}
+div.left_nav ul li a:hover{
+    background-color: #CBE1FF;
+    color:#fff;
+
+}
+
+div.left_nav ul.first_nav li{
+
+    width:100%;
+    float: none;
+}
+ul.second_nav{
+    /*padding-top:10px;*/
+}
+div.left_nav ul.second_nav li{
+    width:100%;
+    float: none;
+}
+div.left_nav ul.second_nav li a{
+    padding-top:5px;
+    padding-bottom: 5px;
+}
+
+
+/*鍙充晶閮ㄥ垎*/
+div.right_left_cont{
+    width:90%;
+    margin:0 auto;
+    line-height: 30px;
+    font-size: 18px;
+}
+div.right_cont{
+    padding-top:60px;
+
+}
+div.live_main_right ul li{
+    float: none;
+    font-size: 20px;
+}
+div.live_main_right ul li a{
+    display: inline-block;
+    padding-bottom: 10px;
+    padding-bottom: 10px;
+
+}
+
+    /*鐩稿叧闃呰*/
+div.about_look{
+    text-align: left;
+    font-size: 16px;
+    margin-top:90px;
+    margin-left:40px;
+}
+div.about_look p{
+    color:#5383C3;
+}
+
+
+#aa,#bb,#cc,#dd,#ee,#ff,#gg,#hh,#ii,#jj,#kk{
+    color:#5383C3;
+    padding:10px 0;
+}
+#a1,#a2,#a3,#a4,#a5,#a6,#a7,#a8{
+    color:#5383C3;
+    padding:10px 0;
+}

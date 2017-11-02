@@ -1,0 +1,14 @@
+.wrapper{ width: 1200px; margin: 0 auto; margin-top: 168px;}
+/*.swiper-slide a{ display: block; position: absolute; z-index: 0; background-color: rgba(0,0,0,.45); color: #fff; bottom: 0; left: 0; line-height: 30px; width: 100%; font-size: 14px; text-indent: 12px;}*/
+.swiper-slide{ position: relative;}
+#container{ font-size: 0;}
+html,body{ overflow: hidden;}
+.swiper-slide .description{ position: absolute; display: inline-block;}
+.d1{ top: 30%; right: 5%;}
+.d2{ top: 35%; left: 5%;}
+.d3{ top: 64%; left: 15%;}
+.d4{ top: 40%; right: 5%;}
+.d5{ top: 70%; left: 15%;}
+.d6{ top: 60%; left: 10%;}
+.description .tit{ color: #ffc72f; font-size: 36px; margin-bottom: 10px; border-left:9px solid #ffc72f; text-indent: 10px;}
+.description p{ color: #fff; font-size: 24px; line-height: 1.6; font-weight: 100; letter-spacing: 2.5px;}

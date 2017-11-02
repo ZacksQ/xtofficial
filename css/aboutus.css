@@ -1,0 +1,257 @@
+div.media_time{
+    width:34%;
+    margin:0 auto;
+    margin-top:175px;
+}
+
+div#header div.media_time ul{
+    margin-right:0;
+}
+div.media_time li{
+    width:33.333%;
+}
+div#header div.media_time ul li{
+    margin-right:0;
+}
+div.media_time li div{
+    padding-left:2px;
+    padding-right:2px;
+    text-align: center;
+}
+div.media_time li div img{
+    width:70%;
+}
+div.media_time ul:after{
+    content:"";
+    display: block;
+    clear: both;
+}
+div.media_time h3{
+    text-align: center;
+    color:#fff;
+    margin-bottom:10px;
+    font-weight: normal;
+    font-size: 24px;
+}
+
+div#header div.media_time ul li div a{
+    padding:3px 10px;
+    font_size:0.2em !important ;
+    color:#fff;
+    border-radius: 10px;
+
+}
+
+div.media_time ul li a:hover{
+    background-color:rgba(255,255,255,1);
+    color:#628ECE !important;
+
+
+}
+
+/*涓讳綋鍐呭*/
+/*浠嬬粛璞″*/
+div#about_intro_xt:after{
+    content: "";
+    display: block;
+    clear:both;
+}
+div.ab_intro_head{
+    text-align: center;
+    line-height:18px;
+    padding-top:35px;
+    padding-bottom: 35px;
+}
+div.ab_intro_head h3{
+    font-weight: 500;
+    font-size: 20px;
+}
+div.ab_intro_head p{
+    font-size: 13px;
+    padding-top:2px;
+}
+div.ab_intro_left,div.ab_intro_right{
+    height:395px;
+    width:50%;
+}
+div.ab_intro_left img{
+    width:100%;height:395px;
+}
+
+div.ab_intro_right div{
+    padding:20px;
+    background-color: #F1F1F1;
+    line-height: 20px;
+    height:355px;
+    overflow:hidden;
+    padding-right:40px;
+
+}
+div.ab_intro_right div img{
+    width:140px;
+}
+
+div#about_intro_xt div.ab_intro_right div p{
+    font-size: 12px;
+    text-align: justify;
+}
+div.ab_intro_right h3{
+    padding:5px 0;
+    font-size: 15px;
+}
+div.ab_intro_bot,div.ab_intro_bot img{
+    width:100%;
+}
+
+/*搴曢儴鍦板浘閮ㄥ垎*/
+div.about_foot_box{
+    padding-bottom:60px;
+}
+div.ab_contact_left{
+    width:50%;
+
+}
+div.ab_contact_left>div{
+    float:right;
+    padding-right:20px;
+}
+div.ab_contact_right{
+    width:50%;
+}
+div.ab_contact_right div div p{
+    line-height: 25px;
+    font-size: 13px;
+}
+div.ab_contact_right>div{
+    float:left;
+    padding-left:20px;
+}
+div.ab_contact_left img{
+    width:400px;
+}
+div.about_foot_box:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+div.contact_top{
+    margin-bottom:20px;
+    border-bottom:1px solid #F1F1F1;
+    padding-bottom:10px;
+}
+div.ab_contact_right div.contact_bottom h4{
+    font-size: 16px;
+}
+
+div#header div.nav ul li a.nav_click{
+    color:#EA5514;
+}
+
+/*div.about_foot_box img{
+    width:100%;
+}*/
+.main_con{
+    width:100%;
+    margin-top: 150px;
+}
+.mTop{
+    width:70%;
+    margin:0 auto;
+}
+.mTop2{
+    width:70%;
+    margin:30px auto;
+    background:url(../images/map.png) no-repeat;
+    height:180px;
+    background-size:100% 100%;
+}
+.mTop_left{
+    width:50%;
+    float:left;
+    box-sizing: border-box;
+}
+.mTop2_left{
+    width:50%;
+    float:left;
+    box-sizing: border-box;
+}
+.mTop_right{
+    width:50%;
+    float:left;
+    padding:15px 20px;
+    box-sizing: border-box;
+}
+.mTop_right p{
+    font-size: 13px;
+    color:#666;
+    margin-top:15px;
+}
+.mTop_right h5{
+    font-size: 13px;
+    color:#666;
+    font-weight: normal;
+}
+.connect p{
+    font-size: 13px;
+    color:#666;
+}
+.connect{
+    /*padding: 0 0 0 118px;*/
+}
+.h3two{
+    margin-top:15px;
+}
+.pOne{
+    margin-top:5px;
+}
+.case_title{
+    margin:0 auto;
+    width:200px;
+    text-align: center;
+}
+.case_pic{
+    width:1223px;
+    margin:60px auto;
+}
+.case_p_c img{
+    width:100%;
+    /*height:100%;*/
+    /*position:absolute;*/
+}
+.case_p_c{
+    overflow: hidden;
+    float:left;
+    width:25%;
+    padding:0 10px;
+    box-sizing: border-box;
+    position:relative;
+    margin-top:5px;
+}
+.ceng{
+    width:94%;
+    /*width:88%;*/
+    height:99%;
+    position:absolute;
+    background:rgba(0,0,0,0);
+    box-sizing: border-box;
+    /*padding:0 10px;*/
+    cursor:pointer;
+}
+.ceng:hover{
+    background:rgba(0,0,0,0.7);
+    transition: background 0.7s;
+}
+.ceng img{
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    top: 175px;
+    left: 80px;
+    opacity: 0;
+}
+.case_title h3{
+    font-size: 26px;
+}
+.case_title p{
+    font-size: 12px;
+}

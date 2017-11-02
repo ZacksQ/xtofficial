@@ -1,0 +1,14 @@
+.wrapper{ width: 1200px; margin: 0 auto; margin-top: 168px;}
+.swiper-pagination{ text-align: right; padding-right: 27px;}
+.swiper-pagination-bullet{ background-color: #fff; opacity: 1;}
+.swiper-pagination-bullet-active{ background-color: #007aff}
+.swiper-slide a{ display: block; position: absolute; z-index: 0; background-color: rgba(0,0,0,.45); color: #fff; bottom: 0; left: 0; line-height: 30px; width: 100%; font-size: 14px; text-indent: 12px;}
+.swiper-slide{ font-size: 0;}
+.case-wrapper{ font-size: 0; margin-top: 30px;}
+a.case-item{ display: inline-block; width: 390px; margin-right: 15px;}
+a.case-item:nth-child(3n){ margin-right: 0;}
+.case-item .casecover{ overflow: hidden; width: 390px; height: 256px;}
+.case-item .tit{ font-size: 14px; font-weight: 100; margin-top: 10px; margin-bottom: 30px; text-overflow:ellipsis; overflow: hidden; white-space: nowrap;}
+.case-content.wrapper{ width: 1000px; margin: 0 auto;}
+.case-content h1{ font-size: 30px; border-bottom: 1px solid #ffedbc; margin-top: 168px; padding-bottom: 24px; margin-bottom: 36px;}
+.case-content .content{ margin-bottom: 100px; line-height: 1.6; font-weight: 100; font-size: 14px;}
