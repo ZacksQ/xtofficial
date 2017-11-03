@@ -455,32 +455,17 @@ To change this template use File | Settings | File Templates.
                 <img src="images/count_iphone.png" alt=""> -->
             </div>
             <div class="clear"></div>
-            <span id="goleft">《</span>
+            <!--修改start-->
+            <!-- <span id="goleft">《</span> -->
             <div class="school-logo">
-                <ul>
-                    <li><img src="images/06-klogo01.png" alt=""></li>
-                    <li><img src="images/06-klogo02.png" alt=""></li>
-                    <li><img src="images/06-klogo04.png" alt=""></li>
-                    <li><img src="images/06-kiogo03.png" alt=""></li>
-                    <li><img src="images/06-klogo05.png" alt=""></li>
-                    <li><img src="images/06-klogo06.png" alt=""></li>
-                    <li><img src="images/06-klogo07.png" alt=""></li>
-                    <li><img src="images/06-klogo08.jpg" alt=""></li>
-                    <li><img src="images/06-klogo09.jpg" alt=""></li>
-                    <li><img src="images/06-klogo10.jpg" alt=""></li>
-                    <li><img src="images/06-klogo11.jpg" alt=""></li>
-                    <li><img src="images/06-klogo12.jpg" alt=""></li>
-                    <li><img src="images/06-klogo13.jpg" alt=""></li>
-                    <li><img src="images/06-klogo14.jpg" alt=""></li>
-                    <li><img src="images/06-klogo15.jpg" alt=""></li>
-                    <li><img src="images/06-klogo16.jpg" alt=""></li>
-                    <li><img src="images/06-klogo17.jpg" alt=""></li>
-                    <li><img src="images/06-klogo18.jpg" alt=""></li>
-                    <li><img src="images/06-klogo19.jpg" alt=""></li>
-                    <li><img src="images/06-klogo20.jpg" alt=""></li>
-                </ul>
+                <div class="wrapper">
+                    <ul>
+                        <li><img src="images/01.jpg" alt=""></li><li><img src="images/02.jpg" alt=""></li><li><img src="images/04.jpg" alt=""></li><li><img src="images/03.jpg" alt=""></li><li><img src="images/05.jpg" alt=""></li><li><img src="images/06.jpg" alt=""></li><li><img src="images/07.jpg" alt=""></li><li><img src="images/08.jpg" alt=""></li><li><img src="images/09.jpg" alt=""></li><li><img src="images/10.jpg" alt=""></li><li><img src="images/11.jpg" alt=""></li><li><img src="images/12.jpg" alt=""></li><li><img src="images/13.jpg" alt=""></li><li><img src="images/14.jpg" alt=""></li><li><img src="images/15.jpg" alt=""></li><li><img src="images/16.jpg" alt=""></li><li><img src="images/17.jpg" alt=""></li><li><img src="images/18.jpg" alt=""></li><li><img src="images/21.jpg" alt=""></li>
+                    </ul>
+                </div>
             </div>
-            <span id="goright">》</span>
+            <!-- <span id="goright">》</span> -->
+            <!--修改end-->
             <div class="clear"></div>
         </div>
     </div>
@@ -619,49 +604,19 @@ To change this template use File | Settings | File Templates.
         $(".school-logo").animate({"scrollLeft":$(".school-logo").scrollLeft()-356+'px'});
     })
 
+    // $(".school-logo .wrapper").append($(".school-logo .wrapper").html()) 下面都改了
+    setInterval(function(){
+        //2888
+        var uleft = parseInt($(".school-logo .wrapper").css("left"))
+        if(uleft <= -2888){
+            $(".school-logo .wrapper").css({"left": '1068px'})
+        }else{
+            $(".school-logo .wrapper").css({"left": (uleft - 4) + 'px'})
+        }
 
-    $(function(){
-        $("#sub").on("click",function(event){
-            event.preventDefault();
-//            获取参数
-            var name = $("input[name='username']").val();
-            var phone = $("input[name='tel']").val();
-            var livetype = $("[name='contractype'] :selected").val();
-            var content = $("textarea[name='desc']").val();
 
-            if (name == '') {
-                alert("请输入您的称呼");
-                return false;
-            }
-            if (phone == '') {
-                alert("请输入您的联系方式");
-                return false;
-            }
-            if (livetype == '') {
-                alert("请选择直播类型");
-                return false;
-            }
+    },60)
 
-            $.ajax({
-                url: "<%=basePath%>home/leavelword.do",
-                type: 'post',
-                dataType: 'json',
-                data:{
-                    "name":name,
-                    "phone":phone,
-                    "livetype":livetype,
-                    "content":content
-                },
-                success: function(data) {
-                    if(data["success"]) {
-                        alert("提交成功");
-                    }else{
-                        alert("提交失败");
-                    }
-                }
-            })
-        });
-    });
 </script>
 </body>
 </html>
