@@ -57,9 +57,10 @@
 .countdata-lb .lb-left{ margin-right: 15%;}
 .countdata-right img{ vertical-align: top}
 .countdata-right img:last-child{ margin-top: -30px;}
-.school-logo{ margin: 96px auto 0; width: 1068px; overflow: hidden; display: inline-block;}
-.school-logo ul{ white-space: nowrap; display: inline-block;}
-.school-logo li{ width: 178px; display: inline-block;/* float: left;*/ height: 110px;}
+.school-logo .wrapper{position: absolute; top: 0; left: 0}
+.school-logo{ margin: 96px auto 0; width: 1068px; overflow: hidden; display: inline-block; position: relative; height: 100px}
+.school-logo ul{ white-space: nowrap; display: inline-block; }
+.school-logo li{ width: 100px; display: inline-block;/* float: left;*/ height: 100px; margin: 0 26px}
 .school-logo li img{ height: 100%;}
 #goleft,#goright{ height: 110px; line-height: 100px; font-size: 50px; display: inline-block; vertical-align: bottom; color: #f1f1f1; cursor: pointer;}
 .b1{ /*background: url(../images/01banner.png) no-repeat center top; background-size: auto 100%;*/ background-color: #000;}
