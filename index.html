@@ -439,32 +439,17 @@
 					<img src="images/count_iphone.png" alt=""> -->
 				</div>
 				<div class="clear"></div>
-				<span id="goleft">《</span>
+				<!--修改start-->
+				<!-- <span id="goleft">《</span> -->
 				<div class="school-logo">
+					<div class="wrapper">
 					<ul>
-						<li><img src="images/06-klogo01.png" alt=""></li>
-						<li><img src="images/06-klogo02.png" alt=""></li>
-						<li><img src="images/06-klogo04.png" alt=""></li>
-						<li><img src="images/06-kiogo03.png" alt=""></li>
-						<li><img src="images/06-klogo05.png" alt=""></li>
-						<li><img src="images/06-klogo06.png" alt=""></li>
-						<li><img src="images/06-klogo07.png" alt=""></li>
-						<li><img src="images/06-klogo08.jpg" alt=""></li>
-						<li><img src="images/06-klogo09.jpg" alt=""></li>
-						<li><img src="images/06-klogo10.jpg" alt=""></li>
-						<li><img src="images/06-klogo11.jpg" alt=""></li>
-						<li><img src="images/06-klogo12.jpg" alt=""></li>
-						<li><img src="images/06-klogo13.jpg" alt=""></li>
-						<li><img src="images/06-klogo14.jpg" alt=""></li>
-						<li><img src="images/06-klogo15.jpg" alt=""></li>
-						<li><img src="images/06-klogo16.jpg" alt=""></li>
-						<li><img src="images/06-klogo17.jpg" alt=""></li>
-						<li><img src="images/06-klogo18.jpg" alt=""></li>
-						<li><img src="images/06-klogo19.jpg" alt=""></li>
-						<li><img src="images/06-klogo20.jpg" alt=""></li>
+						<li><img src="images/01.jpg" alt=""></li><li><img src="images/02.jpg" alt=""></li><li><img src="images/04.jpg" alt=""></li><li><img src="images/03.jpg" alt=""></li><li><img src="images/05.jpg" alt=""></li><li><img src="images/06.jpg" alt=""></li><li><img src="images/07.jpg" alt=""></li><li><img src="images/08.jpg" alt=""></li><li><img src="images/09.jpg" alt=""></li><li><img src="images/10.jpg" alt=""></li><li><img src="images/11.jpg" alt=""></li><li><img src="images/12.jpg" alt=""></li><li><img src="images/13.jpg" alt=""></li><li><img src="images/14.jpg" alt=""></li><li><img src="images/15.jpg" alt=""></li><li><img src="images/16.jpg" alt=""></li><li><img src="images/17.jpg" alt=""></li><li><img src="images/18.jpg" alt=""></li><li><img src="images/21.jpg" alt=""></li>
 					</ul>
+					</div>
 				</div>
-				<span id="goright">》</span>
+				<!-- <span id="goright">》</span> -->
+				<!--修改end-->
 				<div class="clear"></div>
 			</div>
 		</div>
@@ -602,6 +587,20 @@
 		$("#goleft").click(function(){
 			$(".school-logo").animate({"scrollLeft":$(".school-logo").scrollLeft()-356+'px'});
 		})
+
+		// $(".school-logo .wrapper").append($(".school-logo .wrapper").html()) 下面都改了
+		setInterval(function(){
+			//2888
+			var uleft = parseInt($(".school-logo .wrapper").css("left"))
+			if(uleft <= -2888){
+				$(".school-logo .wrapper").css({"left": '1068px'})
+			}else{
+				$(".school-logo .wrapper").css({"left": (uleft - 4) + 'px'})	
+			}
+			
+
+		},60)
+		
 	</script>
 </body>
 </html>
