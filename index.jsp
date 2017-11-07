@@ -587,7 +587,7 @@ To change this template use File | Settings | File Templates.
         // console.log(sdis4)
         if(sdis4 < 380){
             addnum($(".livingnum"), 2000000, 40000, 30)
-            addnum($(".experience span"), 500, 10, 30)
+            addnum($(".experience span"), 3000, 100, 30)
             addnum($(".upgrade span"), 100, 2, 30)
 
             window.removeEventListener("scroll", s4animation);
