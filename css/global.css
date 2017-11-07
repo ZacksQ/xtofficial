@@ -21,7 +21,7 @@ h1{ font-size: 14px; color: #333; margin-bottom: 16px}
 .btn{ display: inline-block;  padding: 8px 16px; cursor: pointer; transition:border .2s, background .2s; -webkit-transition:border .2s, background .2s; -moz-transition:border .2s, background .2s; font-size: 12px; text-align: center;}
 #header{position: fixed; left: 0; top: 0; line-height: 88px; /*height: 88px;*/ width: 100%;  z-index: 99; transition:background .3s; /*background-color: rgba(255,255,255,.8);*/  padding: 0 55px 0 158px; box-shadow: 0 3px 35px rgba(85,141,217,.3); transition:background-color .5s, height .5s,top 1s; -webkit-transition:background-color .5s, height .5s,top 1s; -moz-transition:background-color .5s, height .5s,top 1s; -ms-transition:background-color .5s, height .5s,top 1s; height: 0; overflow: hidden;}
 #header.active{height: 88px; background-color: rgba(255,255,255,.8); transition:background-color .5s, height .5s; -webkit-transition:background-color .5s, height .5s; -moz-transition:background-color .5s, height .5s;-ms-transition:background-color .5s, height .5s;}
-#header .logo{ display: inline-block; width: 185px; height: 48px; background: url(../images/logo_b.png) no-repeat left top; vertical-align: middle;}
+#header .logo{ display: inline-block; width: 188px; height: 48px; background: url(../images/logo_b.png) no-repeat left top; vertical-align: middle;}
 #nav{ display: inline-block; float: right;}
 #nav li{ display: inline-block;}
 #nav li a{ display: block; padding: 0 16px; font-size: 18px; font-weight: 100}
