@@ -33,7 +33,9 @@
 .createliving-left .tit{ color: #333; font-size: 36px; font-weight: 100; line-height: 1.6; letter-spacing: 3px; margin-top: 48px;}
 .createliving-left p{ color: #333; font-size: 18px; font-weight: 100; margin-top: 26px; line-height: 1.8; margin-bottom: 56px;}
 .createliving-right img{ vertical-align: top; }
-.createliving-right img:last-child{ top: -30px; position: absolute; left: 25%;}
+.createliving-right img:last-child{ top: -30px; position: absolute;    left: 0;
+    right: 0;
+    margin: auto;}
 .school-logo{ margin-top: 96px;}
 .school-logo li{ width: 178px; display: inline-block;}
 
