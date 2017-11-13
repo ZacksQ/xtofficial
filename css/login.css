@@ -1,0 +1,84 @@
+html,body{height: 100%;}
+header{ background-color: #fff;}
+header .wrapper{ width: 1200px; margin: 0 auto; height: 87px;}
+.container{ background: url(../images/login-bg.jpg) no-repeat center top; background-size: 100%; height: 100%}
+.logo{ display: inline-block; line-height: 87px; height: 87px;}
+.logo img{ vertical-align: middle;}
+.section_left{ width: 50%; padding-top: 96px;}
+.section_left_cont{ width: 371px; background-color: #fff; border-radius: 10px; margin: 0 auto;}
+div.section_left_cont {
+    margin: 0 auto;
+    padding: 30px 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    /* border-top: 5px solid #D9D9D9; */
+    /* border-right: 5px solid #D9D9D9; */
+    /*padding-top: 50px;*/
+}
+.section_left_cont h3 {
+    font-size: 21px;
+    padding-bottom: 5px;
+}
+.ipbox {
+    position: relative;
+}
+.section_left_cont input[type=text],.section_left_cont input[type=password] {
+    width: 100%;
+    margin: 0 auto;
+    border: 1px solid #6796D3;
+    border-radius: 5px;
+    margin-top: 10px;
+    padding: 15px 5px;
+    padding-left: 38px;
+}
+div.section_left_cont div.input_yzm input, div.input_yzm img, div.input_yzm a {
+    width: 30%;
+    margin-left: 2px;
+}
+div.section_left_cont .lbtn {
+    width: 100%;
+        background: -webkit-linear-gradient(top,#499ef6,#2f90f4);
+    background: -o-linear-gradient(top,#499ef6,#2f90f4);
+    background: -ms-linear-gradient(top,#499ef6,#2f90f4);
+    background: -moz-linear-gradient(top,#499ef6,#2f90f4);
+    background: -webkit-linear-gradient(top,#499ef6,#2f90f4);
+    filter: progid:DXImageTransform.Microsoft.gradient(startcolorstr='#ff499ef6', endcolorstr='#ff2f90f4', gradientType=0);
+    padding-top: 16px;
+    padding-bottom: 16px;
+    border-radius: 5px;
+    margin-top: 13px;
+    color: #fff;
+    margin-bottom: 5px;
+    border: 0
+}
+.section_left_cont a {
+    color: #5F97E1;
+}
+#yanpic{ vertical-align: middle;}
+.l_nav{    height: 60px;
+    line-height: 90px; font-size: 14px;}
+
+    .ipboxcode input {
+    width: 40% !important;
+    float: left;
+}
+.ipboxcode button {
+    width: 40%;
+    float: right;
+    background-color: #499ef6;
+    color: #fff;
+    border-radius: 5px;
+    margin-top: 10px;
+    padding: 15px 0;
+    margin-right: 5%;
+    cursor: pointer; border: 0
+}
+.ipboxcode:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+input#aa {
+    width: 20px;
+    margin-top: 23px;
+}

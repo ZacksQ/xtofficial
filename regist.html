@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>登注册象塔直播控制台</title>
+	<link rel="stylesheet" type="text/css" href="layui/css/layui.css" />
+	<link rel="stylesheet" type="text/css" href="css/global.css" />
+	<link rel="stylesheet" type="text/css" href="css/login.css" />
+</head>
+<body>
+	<header>
+		<div class="wrapper">
+			<a href="home-index.html" class="logo">
+				<img src="images/console-logo.png" alt="">
+			</a>
+			<div class="l_nav fr">
+		        <a href="home-index.html">首页</a><span> | </span>
+		        <a href="aboutus.html">关于象塔</a>
+		    </div>
+		</div>
+	</header>
+	<div class="container">
+		<div class="section_left lf"><div class="section_left_cont">
+            <h3>账户注册</h3>
+  
+                <div class="ipbox">
+                    <input type="text" placeholder="用户名" name="uname"/><img class="input_user ipicon" src="img/login/user.png" alt=""/>
+                </div>
+                <div class="ipbox">
+                    <input type="password" placeholder="密码" name="upwd"/><img class="input_pass ipicon" src="img/login/password.png" alt=""/>
+                </div>
+                <div class="ipbox">
+                    <input type="password" placeholder="确认密码" name="confirmpwd"/><img class="input_pass2 ipicon"  src="img/login/password.png" alt=""/>
+                </div>
+ <!--                <div class="ipbox">
+                    <input type="text" placeholder="联系电话" name="tel"/><img class="input_phone ipicon" src="img/login/phone.png" alt=""/>
+                </div> -->
+                <div class="ipboxcode">
+                    <input type="text" placeholder="输入验证码" name="code"/>
+                    <button id="getcode">获取验证码</button>
+                </div>
+               <!-- <input id="aa" class="chk" type="checkbox" checked/><label for="aa">我已阅读并接受</label><a href="live_encyclopedia3.html">&lt;&lt;象塔直播平台服务条款
+                &gt;&gt;</a><br/> -->
+                <button id="register" class="lbtn" type="button">注册</button>
+                <br/>
+                <a href="login.html">已有账号？请登录</a>
+
+        </div>
+	</div>
+	<script src="js/jquery-1.9.1.min.js"></script>
+	<script src="layui/layui.js"></script>
+	<script>
+		layui.use(["layer"], function(){
+        var uname = $("input[name=uname]");
+        var code = $("input[name=code]");
+        var upwd = $("input[name=upwd]");
+        var confirmpwd = $("input[name=confirmpwd]");
+
+        $("#getcode").click(function(){            
+            if($.trim(uname.val())==""){
+                layer.msg("用户名不能为空");
+                return false;
+            }
+            $.ajax({
+                url: "http://www.xiangtazhibo.com/newlive/muser/sendSms.do",
+                type: 'post',
+                dataType: 'json',
+                data: {
+                    phone: uname.val()
+                },
+                success: function(d){
+                    if(d["success"]){
+                        layer.msg("发送成功");
+                    }else{
+                        layer.msg(d.msg);
+                    }
+                }
+            });
+        });
+
+        $("#register").click(function(){
+            if($.trim(uname.val())==""){
+                layer.msg("用户名不能为空");
+                return false;
+            }
+            if($.trim(code.val())==""){
+                layer.msg("验证码不能为空");
+                return false;
+            }
+            if($.trim(upwd.val())==""){
+                layer.msg("密码不能为空");
+                return false;
+            }
+            if($.trim(upwd.val())!=$.trim(confirmpwd.val())){
+                layer.msg("密码两次输入不一致");
+                return false;
+            }
+            $.ajax({
+                url: "http://www.xiangtazhibo.com/newlive/muser/register.do",
+                type: 'post',
+                dataType: 'json',
+                data: {
+                    phone: uname.val(),
+                    pwd: upwd.val(),
+                    smscode: code.val()
+                },
+                success: function(d){
+                    if(d["success"]){
+                        layer.msg("注册成功，马上为你转跳登录...",function(){
+                            window.location.href="login.html";
+                        });
+                    }else{
+                        layer.msg(d.msg);
+                    }
+                }
+            });
+        });
+    });
+    
+
+	</script>
+</body>
+</html>

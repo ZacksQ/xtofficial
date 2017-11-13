@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>登录-象塔直播控制台</title>
+	<link rel="stylesheet" type="text/css" href="layui/css/layui.css" />
+	<link rel="stylesheet" type="text/css" href="css/global.css" />
+	<link rel="stylesheet" type="text/css" href="css/login.css" />
+</head>
+<body>
+	<header>
+		<div class="wrapper">
+			<a href="home-index.html" class="logo">
+				<img src="images/console-logo.png" alt="">
+			</a>
+			<div class="l_nav fr">
+		        <a href="home-index.html">首页</a><span> | </span>
+		        <a href="aboutus.html">关于象塔</a>
+		    </div>
+		</div>
+	</header>
+	<div class="container">
+		<div class="section_left lf">
+	        <div class="section_left_cont login">
+	            <h3>账户登录</h3>
+	            <form action="">
+	                <div class="ipbox">
+	                    <input type="text" placeholder="用户名" name="uname"><img class="input_user_login ipicon" src="img/login/user.png" alt="">
+	                </div>
+	                <div class="ipbox">
+	                    <input type="password" placeholder="密码" name="upwd"><img class="input_pass_login ipicon" src="img/login/password.png" alt="">
+	                </div>
+	                <div class="input_yzm">
+	                    <input type="text" placeholder="验证码" id="yanzheng">
+	                    <img src="http://www.xiangtazhibo.com/newlive/muser/checkCode.do?112312312" alt="" id="yanpic">
+	                    <a style="cursor: pointer" id="huan">换一张</a>
+	                </div>
+	                
+	                <button id="submit" class="lbtn" type="button">登录</button>
+	                <div>
+	                    <a href="resetpwd.html">忘记密码？</a>
+	                    <a class="fr" href="regist.html">立即注册 </a>
+	                </div>
+	                
+	                <!--<span>其他登录方式：</span><br/>-->
+
+
+	            </form>
+
+	            <!-- <div class="code_small">
+	                <img src="img/login/tv.png" alt=""/>
+	            </div>
+	            <i class="zhe"></i> -->
+	        </div>
+	    </div>
+	</div>
+	<script src="js/jquery-1.9.1.min.js"></script>
+	<script src="layui/layui.js"></script>
+	<script>
+		$("#huan").click(function () {
+    var count = parseInt(Math.random() * (2000000 - 1000000 + 1) + 1000000);
+    var yansrc = "http://www.xiangtazhibo.com/newlive/muser/checkCode.do?" + count;
+    $("#yanpic").attr("src", yansrc)
+})
+$("#submit").click(function () {
+    login();
+});
+function keylogin() {
+    if (event.keyCode == 13) {
+        document.querySelector("#submit").click();
+    }
+}
+layui.use(['layer'], function () {
+    var layer = layui.layer;
+});
+function login() {
+    var url = 'http://www.xiangtazhibo.com/newlive/muser/login.do';
+    var issure = $("#aa").is(":checked");
+    var uname = $('[name="uname"]').val();
+    var upwd = $('[name="upwd"]').val();
+    var yanzheng = $("#yanzheng").val();
+    if (uname == '') {
+        layer.msg("请输入账号");
+    } else if (upwd == '') {
+        layer.msg("请输入密码");
+    }else {
+        $.ajax({
+            url: url,
+            type: 'get',
+            dataType: 'json',
+            data: {'phone': uname, 'pwd': upwd, 'randcode': yanzheng},
+            success: function (data) {
+                //console.log(data.success);
+                if (data.success) {
+                    location.href = 'http://www.xiangtazhibo.com/newlive/console/index.html';
+                } else {
+                    layer.msg(data.msg);
+                }
+            }
+        })
+    }
+}
+	</script>
+</body>
+</html>

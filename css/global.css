@@ -2,7 +2,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block;}
 body{font-family:"Hiragino Sans GB W3", "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif; font-size: 12px;}
 ol,ul{list-style:none;}
-input{-webkit-appearance: none;}
+/*input{-webkit-appearance: none;}*/
 blockquote,q{quotes:none;}
 table{border-collapse:collapse;border-spacing:0;}
 /*html,body{ height: 100%;overflow-x: hidden;}*/
