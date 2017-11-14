@@ -77,7 +77,7 @@ To change this template use File | Settings | File Templates.
                             <img src="images/ad1.png" alt="">
                         </div>
                         <div>
-                            <div class="advancet">自由品牌</div>
+                            <div class="advancet">自有品牌</div>
                             <div class="advdes">可为客户提供拥有自身品牌LOGO的直播平台</div>
                         </div>
                     </li>
